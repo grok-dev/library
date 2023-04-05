@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="pop-up-form" class="pop-up-form">
+      <h2>Add a book</h2>
+      <ul class="pop-up-list">
+        <li class="pop-up-item">
+          <label for="title">Title</label>
+          <input id="title" type="text" name="title" required />
+        </li>
+        <li class="pop-up-item">
+          <label for="author">Author</label>
+          <input id="author" type="text" name="author" required />
+        </li>
+        <li class="pop-up-item">
+          <label for="pages"># of pages</label>
+          <input id="pages" type="text" name="pages" required />
+        </li>
+      </ul>
+      <div class="pop-up-button-container">
+        <button id="pop-up-submit" class="pop-up-button" type="submit">Submit</button>
+        <button id="close-pop-up-button" class="pop-up-button" type="button">Close</button>
+      </div>
+    </form>
+
+    <div class="library-container">
+      <div class="library-sidebar">
+        <p class="library-title">Library</p>
+        <button id="new-book-button" class="new-book-button">Add Book</button>
+      </div>
+      <div class="library-main">
+        <!-- <div class="book-card">
+          <p class="book-title">The Lord of the Rings</p>
+          <p class="book-author">J. R. R. Tolkien</p>
+          <p class="book-pages">1178 pages</p>
+          <button id="book-button" class="book-read-button book-button">Unread</button>
+          <button class="book-delete-button book-button">Remove</button>
+        </div> -->
+
+        <!-- <div class="book-card">
+          <p class="book-title">The Lord of the Rings</p>
+          <p class="book-author">J. R. R. Tolkien</p>
+          <p class="book-pages">1178 pages</p>
+          <button onclick="toggleRead()" id="book-button" class="book-read-button book-button">Unread</button>
+          <button class="book-delete-button book-button">Remove</button>
+        </div> -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
